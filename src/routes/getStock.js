@@ -1,6 +1,6 @@
 import { Router } from 'express'
 import { GetStockController } from '../controllers/getStockController.js'
 
-const router = Router()
+export const router = Router()
 
-router.get('/api/stock/:codfilial/:codprod', GetStockController())
+router.get('/api/v1/stock/:codFilial/:codProd', GetStockController)
